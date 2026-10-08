@@ -1,0 +1,21 @@
+# Maven derleme çıktıları
+target/
+
+# jpackage ve Inno Setup çıktıları
+dist/
+installer/Output/
+
+# Gizli bilgiler
+.env
+
+# Veritabanı ve dışa aktarılan müşteri verileri (gerçek kişisel veri asla depoya girmez)
+*.db
+*.sqlite
+*.csv
+
+# Editör ve işletim sistemi dosyaları
+.vscode/
+.idea/
+*.iml
+Thumbs.db
+.DS_Store
