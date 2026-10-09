@@ -1,0 +1,310 @@
+/* Uygulamanın ortak görünümü. Renkler AtlantaFX temasının değişkenlerinden (-color-...) gelir;
+   böylece açık ve koyu temada ayrı ayrı renk yazmak gerekmez. */
+
+.root {
+    -fx-font-size: 13px;
+}
+
+.mono {
+    -fx-font-family: "Consolas", "Cascadia Mono", monospace;
+}
+
+.field-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.panel {
+    -fx-background-color: -color-bg-default;
+    -fx-background-radius: 10;
+    -fx-border-color: -color-border-default;
+    -fx-border-radius: 10;
+}
+
+.transparent-scroll,
+.transparent-scroll > .viewport {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* ---------------------------------------------------------- giriş ve kurulum */
+
+.auth-background {
+    -fx-background-color: -color-bg-subtle;
+}
+
+.auth-card {
+    -fx-background-color: -color-bg-default;
+    -fx-background-radius: 14;
+    -fx-border-color: -color-border-default;
+    -fx-border-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 24, 0, 0, 6);
+}
+
+.brand-panel {
+    -fx-background-color: linear-gradient(to bottom, #1f6feb, #0a3078);
+}
+
+.brand-title {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.brand-tagline {
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+    -fx-font-size: 15px;
+}
+
+.brand-feature {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+.brand-icon {
+    -fx-icon-color: #f5c77e;
+    -fx-icon-size: 20px;
+}
+
+.brand-note {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 11px;
+}
+
+.demo-box {
+    -fx-background-color: -color-accent-subtle;
+    -fx-background-radius: 8;
+}
+
+.password-rules .label {
+    -fx-font-size: 11.5px;
+    -fx-graphic-text-gap: 6;
+}
+
+.rule-ok, .rule-ok .ikonli-font-icon {
+    -fx-text-fill: -color-success-fg;
+    -fx-icon-color: -color-success-fg;
+}
+
+.rule-pending, .rule-pending .ikonli-font-icon {
+    -fx-text-fill: -color-fg-muted;
+    -fx-icon-color: -color-fg-muted;
+}
+
+.lang-button {
+    -fx-font-weight: bold;
+}
+
+/* ---------------------------------------------------------- iskelet ve menü */
+
+.shell {
+    -fx-background-color: -color-bg-subtle;
+}
+
+.sidebar {
+    -fx-background-color: -color-bg-default;
+    -fx-border-color: transparent -color-border-default transparent transparent;
+}
+
+.sidebar-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.nav-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8;
+    -fx-padding: 9 12 9 12;
+    -fx-graphic-text-gap: 12;
+    -fx-text-fill: -color-fg-default;
+    -fx-border-width: 0;
+}
+
+.nav-item .ikonli-font-icon {
+    -fx-icon-color: -color-fg-muted;
+    -fx-icon-size: 16px;
+}
+
+.nav-item:hover {
+    -fx-background-color: -color-bg-subtle;
+}
+
+.nav-item:selected {
+    -fx-background-color: -color-accent-subtle;
+    -fx-text-fill: -color-accent-fg;
+    -fx-font-weight: bold;
+}
+
+.nav-item:selected .ikonli-font-icon {
+    -fx-icon-color: -color-accent-fg;
+}
+
+.user-box {
+    -fx-border-color: -color-border-default transparent transparent transparent;
+}
+
+.avatar {
+    -fx-background-color: -color-accent-emphasis;
+    -fx-background-radius: 50%;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.avatar-large {
+    -fx-font-size: 18px;
+}
+
+/* ---------------------------------------------------------- hesaplar */
+
+.total-value {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.card-balance {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.account-card {
+    -fx-border-width: 1 1 1 4;
+    -fx-border-color: -color-border-default -color-border-default -color-border-default -color-accent-emphasis;
+}
+
+.account-card.currency-usd {
+    -fx-border-color: -color-border-default -color-border-default -color-border-default -color-success-emphasis;
+}
+
+.account-card.currency-eur {
+    -fx-border-color: -color-border-default -color-border-default -color-border-default #8250df;
+}
+
+.account-card.deposit-card {
+    -fx-border-color: -color-border-default -color-border-default -color-border-default #d4a72c;
+}
+
+.list-row {
+    -fx-border-color: transparent transparent -color-border-muted transparent;
+}
+
+.list-row:hover {
+    -fx-background-color: -color-bg-subtle;
+}
+
+.tx-icon-in {
+    -fx-icon-color: -color-success-fg;
+    -fx-icon-size: 18px;
+}
+
+.tx-icon-out {
+    -fx-icon-color: -color-danger-fg;
+    -fx-icon-size: 18px;
+}
+
+.amount-in, .table-cell.amount-in {
+    -fx-text-fill: -color-success-fg;
+    -fx-font-weight: bold;
+}
+
+.amount-out, .table-cell.amount-out {
+    -fx-text-fill: -color-fg-default;
+    -fx-font-weight: bold;
+}
+
+.amount-field {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.owner-ok, .owner-ok .ikonli-font-icon {
+    -fx-text-fill: -color-success-fg;
+    -fx-icon-color: -color-success-fg;
+    -fx-font-weight: bold;
+}
+
+/* ---------------------------------------------------------- rozetler */
+
+.badge {
+    -fx-background-radius: 20;
+    -fx-padding: 2 9 2 9;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.badge-active {
+    -fx-background-color: -color-success-subtle;
+    -fx-text-fill: -color-success-fg;
+}
+
+.badge-frozen {
+    -fx-background-color: -color-warning-subtle;
+    -fx-text-fill: -color-warning-fg;
+}
+
+.badge-closed, .badge-muted {
+    -fx-background-color: -color-neutral-subtle;
+    -fx-text-fill: -color-fg-muted;
+}
+
+.badge-info {
+    -fx-background-color: -color-accent-subtle;
+    -fx-text-fill: -color-accent-fg;
+}
+
+/* ---------------------------------------------------------- diyaloglar */
+
+.success-icon {
+    -fx-icon-color: -color-success-fg;
+    -fx-icon-size: 44px;
+}
+
+.temp-password {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-background-color: -color-bg-subtle;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12 6 12;
+}
+
+/* ---------------------------------------------------------- özet kutuları ve grafikler */
+
+.stat-icon {
+    -fx-icon-color: -color-accent-fg;
+    -fx-icon-size: 22px;
+}
+
+.tile-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.tile-value-small {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.tile-income .tile-value {
+    -fx-text-fill: -color-success-fg;
+}
+
+.tile-expense .tile-value {
+    -fx-text-fill: -color-danger-fg;
+}
+
+.trend-chart .default-color0.chart-bar {
+    -fx-bar-fill: -color-success-emphasis;
+}
+
+.trend-chart .default-color1.chart-bar {
+    -fx-bar-fill: -color-danger-emphasis;
+}
+
+.legend-swatch.default-color0 { -fx-fill: -color-chart-1; }
+.legend-swatch.default-color1 { -fx-fill: -color-chart-2; }
+.legend-swatch.default-color2 { -fx-fill: -color-chart-3; }
+.legend-swatch.default-color3 { -fx-fill: -color-chart-4; }
+.legend-swatch.default-color4 { -fx-fill: -color-chart-5; }
+.legend-swatch.default-color5 { -fx-fill: -color-chart-6; }
+.legend-swatch.default-color6 { -fx-fill: -color-chart-7; }
+.legend-swatch.default-color7 { -fx-fill: -color-chart-8; }
