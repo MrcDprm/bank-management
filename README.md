@@ -152,16 +152,6 @@ ISCC installer\BankManager.iss
 - **Building a bilingual UI.** All texts live in two properties files, and a test scans the source code to make sure every key used exists in both languages. I avoided `MessageFormat` because it treats the apostrophe in Turkish words like "TL'ye" as a special character.
 - **JavaFX compared to Windows Forms.** Layout panes (`BorderPane`, `VBox`, `GridPane`) instead of absolute positions, CSS instead of property grids, and `Task` to keep slow work such as password hashing off the UI thread.
 
-## Future Plans
-
-- A client-server version (REST API and a central database) so customers can sign in from their own device
-- Scheduled and recurring transfers
-- Bill payments
-- Cards and card statements
-- Transfers to other banks (EFT/FAST simulation)
-- Live exchange rates
-- Audit log of staff actions
-
 ## License
 
 [MIT](LICENSE) © 2026 Miraç Deprem
