@@ -152,16 +152,6 @@ ISCC installer\BankManager.iss
 - **İki dilli arayüz.** Bütün metinler iki properties dosyasında; bir test kaynak kodu tarayıp kullanılan her anahtarın iki dilde de olduğunu kontrol ediyor. `MessageFormat` kullanmadım, çünkü "TL'ye" gibi Türkçe kelimelerdeki kesme işaretini özel karakter sayıyor.
 - **JavaFX ve Windows Forms farkı.** Mutlak konum yerine yerleşim panelleri (`BorderPane`, `VBox`, `GridPane`), özellik penceresi yerine CSS, şifre özeti gibi yavaş işleri arayüzü dondurmadan yapmak için `Task`.
 
-## Gelecek Planları
-
-- Sunucu-istemci sürümü (REST API ve merkezi veritabanı): müşteri kendi cihazından girebilsin
-- Zamanlanmış ve düzenli transferler
-- Fatura ödeme
-- Kartlar ve kart ekstresi
-- Başka bankalara transfer (EFT/FAST benzetimi)
-- Canlı döviz kurları
-- Personel işlemlerinin denetim kaydı
-
 ## Lisans
 
 [MIT](LICENSE) © 2026 Miraç Deprem
